@@ -17,7 +17,7 @@ class UserResources(Resource):
                     "Content-Type": "application/json"
                 }
             else:
-                return {"status": "NOT_FOUND"}, 404, {
+                return {"message": "NOT_FOUND"}, 404, {
                     "Content-Type": "application/json"
                 }
         else:
@@ -52,18 +52,22 @@ class UserResources(Resource):
                 return result, 200, {
                     "Content-Type": "application/json"
                 }
-        return {"status": "NOT_FOUND"}, 404, {
+        return {"message": "NOT_FOUND"}, 404, {
             "Content-Type": "application/json"
         }
     def delete(self, id=None):
         if id is not None:
             result = self.users.delete_by_id(id)
             if result is True:
-                return "Deleted", 200
-        return {"status": "NOT_FOUND"}, 404, {
+                return {"message": "Deleted"}, 200, {
+                    "Content-Type": "application/json"
+                }
+        return {"message": "NOT_FOUND"}, 404, {
             "Content-Type": "application/json"
         }
     def patch(self):
-        return "Not yet implemented", 501
+        return {"message": "Not yet implemented"}, 501, {
+            "Content-Type": "application/json"
+        }
 
 api.add_resource(UserResources, "", "/<int:id>")
