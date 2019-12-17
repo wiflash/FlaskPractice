@@ -15,7 +15,7 @@ def home():
 
 from blueprints.user.resources import blueprint_user
 app.register_blueprint(blueprint_user, url_prefix="/user")
-
+ 
 
 @app.after_request
 def after_request(response):
