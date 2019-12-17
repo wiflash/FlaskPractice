@@ -3,91 +3,84 @@ from flask import Blueprint
 from blueprints import db
 from sqlalchemy import desc
 from datetime import datetime
+from blueprints.rent.model import *
+from blueprints.book.model import *
 from blueprints.user.model import *
-from blueprints.client.model import *
 
 
-blueprint_user = Blueprint("user", __name__)
-api = Api(blueprint_user)
+blueprint_rent = Blueprint("rent", __name__)
+api = Api(blueprint_rent)
 
-class UserResources(Resource):
+class RentResources(Resource):
     def get(self, id=None):
         if id is None:
             rows = []
             parser =reqparse.RequestParser()
             parser.add_argument("p", type=int, location="args", default=1)
             parser.add_argument("rp", type=int, location="args", default=25)
-            # parser.add_argument("orderby", location="args", help="invalid order-by value", choices=("id", "sex"))
-            # parser.add_argument("sort", location="args", help="invalid sort value", choices=("desc","asc"))
+            parser.add_argument("book_id", type=int, location="args")
+            parser.add_argument("user_id", type=int, location="args")
             args = parser.parse_args()
             offset = (args["p"] - 1)*args["rp"]
             
-            qry = Users.query.filter_by(deleted_status=False)
-            # if args["orderby"] == "id":
-            #     if args["sort"] == "desc":
-            #         qry = qry.order_by(desc(Users.id))
-            #     else: qry = qry.order_by(Users.id)
-            # else:
-            #     if args["sort"] == "desc":
-            #         qry = qry.order_by(desc(Users.sex))
-            #     else: qry = qry.order_by(Users.sex)
+            qry = Rents.query
+            if args["book_id"] is not None:
+                qry = qry.filter_by(book_id=args["book_id"])
+            if args["user_id"] is not None:
+                qry = qry.filter_by(user_id=args["user_id"])
             qry = qry.limit(args["rp"]).offset(offset)
             for row in qry.all():
-                client_with_id = Clients.query.get(marshal(row, Users.response_fields)["client_id"])
-                if client_with_id.deleted_status is False:
-                    rows.append(marshal(row, Users.response_fields))
+                marshal_rent = marshal(row, Rents.response_fields)
+                book_with_id = Books.query.get(marshal_rent["book_id"])
+                user_with_id = Users.query.get(marshal_rent["user_id"])
+                if book_with_id.deleted_status is False and user_with_id.deleted_status is False:
+                    marshal_book = marshal(book_with_id, Books.response_fields)
+                    marshal_user = marshal(user_with_id, Users.response_fields)
+                    marshal_rent["user"] = marshal_user
+                    marshal_rent["book"] = marshal_book
+                    rows.append(marshal_rent)
             return rows, 200
         else:
-            qry = Users.query.get(id)
-            client_with_id = Clients.query.get(qry.client_id)
-            if qry.deleted_status is True or qry is None or client_with_id.deleted_status is True:
+            qry = Rents.query.get(id)
+            if qry is None:
+                marshal_rent = marshal(qry, Rents.response_fields)
                 return {"message": "NOT_FOUND"}, 404, {"Content-Type": "application/json"}
-            return marshal(qry, Users.response_fields), 200, {"Content-Type": "application/json"}
+            book_with_id = Books.query.get(marshal_rent["book_id"])
+            user_with_id = Users.query.get(marshal_rent["user_id"])
+            if book_with_id is None or book_with_id.deleted_status is True:
+                return {"message": "book_id not found"}, 404, {"Content-Type": "application/json"}
+            if user_with_id is None or user_with_id.deleted_status is True:
+                return {"message": "user_id not found"}, 404, {"Content-Type": "application/json"}
+            marshal_book = marshal(book_with_id, Books.response_fields)
+            marshal_user = marshal(user_with_id, Users.response_fields)
+            marshal_rent["user"] = marshal_user
+            marshal_rent["book"] = marshal_book
+            return marshal_rent, 200, {"Content-Type": "application/json"}
 
     def post(self):
         parser = reqparse.RequestParser()
-        parser.add_argument("name", location="json", required=True)
-        parser.add_argument("age", location="json", type=int, required=True)
-        parser.add_argument("sex", location="json", required=True)
-        parser.add_argument("client_id", location="json", type=int, required=True)
+        parser.add_argument("book_id", location="json", type=int, required=True)
+        parser.add_argument("user_id", location="json", type=int, required=True)
         args = parser.parse_args()
-        client_with_id = Clients.query.get(args["client_id"])
-        if client_with_id is None or client_with_id.deleted_status is True:
-            return {"message": "NOT_FOUND"}, 404, {"Content-Type": "application/json"}
-        user = Users(args["name"], args["age"], args["sex"], args["client_id"])
-        db.session.add(user)
+        book_with_id = Books.query.get(args["book_id"])
+        user_with_id = Users.query.get(args["user_id"])
+        if book_with_id is None or book_with_id.deleted_status is True:
+            return {"message": "book_id not found"}, 404, {"Content-Type": "application/json"}
+        if user_with_id is None or user_with_id.deleted_status is True:
+            return {"message": "user_id not found"}, 404, {"Content-Type": "application/json"}
+        Rent = Rents(args["book_id"], args["user_id"])
+        db.session.add(Rent)
         db.session.commit()
-        return marshal(user, Users.response_fields), 200, {"Content-Type": "application/json"}
+        marshal_rent = marshal(Rent, Rents.response_fields)
+        marshal_book = marshal(book_with_id, Books.response_fields)
+        marshal_user = marshal(user_with_id, Users.response_fields)
+        marshal_rent["user"] = marshal_user
+        marshal_rent["book"] = marshal_book
+        return marshal_rent, 200, {"Content-Type": "application/json"}
 
-    def put(self, id=None):
-        parser = reqparse.RequestParser()
-        parser.add_argument("name", location="json", required=True)
-        parser.add_argument("age", location="json", type=int, required=True)
-        parser.add_argument("sex", location="json", required=True)
-        parser.add_argument("client_id", location="json", type=int, required=True)
-        args = parser.parse_args()
-        if id is not None:
-            qry = Users.query.get(id)
-            if qry.deleted_status is False and qry is not None:
-                qry.name = args["name"]
-                qry.age = args["age"]
-                qry.sex = args["sex"]
-                qry.client_id = args["client_id"]
-                db.session.commit()
-                return marshal(qry, Users.response_fields), 200, {"Content-Type": "application/json"}
-        return {"message": "NOT_FOUND"}, 404, {"Content-Type": "application/json"}
-
-    def delete(self, id=None):
-        if id is not None:
-            qry = Users.query.get(id)
-            if qry.deleted_status is False and qry is not None:
-                qry.deleted_status = True
-                db.session.commit()
-                return {"message": "Deleted"}, 200, {"Content-Type": "application/json"}
-        return {"message": "NOT_FOUND"}, 404, {"Content-Type": "application/json"}
 #     def patch(self):
 #         return {"message": "Not yet implemented"}, 501, {
 #             "Content-Type": "application/json"
 #         }
 
-api.add_resource(UserResources, "", "/<int:id>")
+api.add_resource(RentResources, "", "/<int:id>")

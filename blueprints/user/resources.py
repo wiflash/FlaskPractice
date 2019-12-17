@@ -33,15 +33,18 @@ class UserResources(Resource):
             #     else: qry = qry.order_by(Users.sex)
             qry = qry.limit(args["rp"]).offset(offset)
             for row in qry.all():
-                client_with_id = Clients.query.get(marshal(row, Users.response_fields)["client_id"])
+                marshal_user = marshal(row, Users.response_fields)
+                client_with_id = Clients.query.get(marshal_user["client_id"])
                 if client_with_id.deleted_status is False:
-                    rows.append(marshal(row, Users.response_fields))
+                    rows.append(marshal_user)
             return rows, 200
         else:
             qry = Users.query.get(id)
             client_with_id = Clients.query.get(qry.client_id)
-            if qry.deleted_status is True or qry is None or client_with_id.deleted_status is True:
+            if qry.deleted_status is True or qry is None:
                 return {"message": "NOT_FOUND"}, 404, {"Content-Type": "application/json"}
+            if client_with_id.deleted_status is True:
+                return {"message": "client_id not found"}, 404, {"Content-Type": "application/json"}
             return marshal(qry, Users.response_fields), 200, {"Content-Type": "application/json"}
 
     def post(self):
@@ -53,7 +56,7 @@ class UserResources(Resource):
         args = parser.parse_args()
         client_with_id = Clients.query.get(args["client_id"])
         if client_with_id is None or client_with_id.deleted_status is True:
-            return {"message": "NOT_FOUND"}, 404, {"Content-Type": "application/json"}
+            return {"message": "client_id not found"}, 404, {"Content-Type": "application/json"}
         user = Users(args["name"], args["age"], args["sex"], args["client_id"])
         db.session.add(user)
         db.session.commit()
@@ -66,6 +69,9 @@ class UserResources(Resource):
         parser.add_argument("sex", location="json", required=True)
         parser.add_argument("client_id", location="json", type=int, required=True)
         args = parser.parse_args()
+        client_with_id = Clients.query.get(args["client_id"])
+        if client_with_id is None or client_with_id.deleted_status is True:
+            return {"message": "client_id not found"}, 404, {"Content-Type": "application/json"}
         if id is not None:
             qry = Users.query.get(id)
             if qry.deleted_status is False and qry is not None:
