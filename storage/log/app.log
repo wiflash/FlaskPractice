@@ -1,40 +1,314 @@
-[2019-12-17 10:34:38,566] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:25} WARNING - REQUEST_LOG	{"request": {}, "response": []}
-[2019-12-17 10:34:58,986] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:25} WARNING - REQUEST_LOG	{"request": {}, "response": []}
-[2019-12-17 10:35:00,356] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:25} WARNING - REQUEST_LOG	{"request": {}, "response": []}
-[2019-12-17 10:35:02,148] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:25} WARNING - REQUEST_LOG	{"request": {}, "response": []}
-[2019-12-17 10:35:22,055] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:25} WARNING - REQUEST_LOG	{"request": {}, "response": []}
-[2019-12-17 10:35:23,930] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:25} WARNING - REQUEST_LOG	{"request": {}, "response": []}
-[2019-12-17 10:35:30,654] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:25} WARNING - REQUEST_LOG	{"request": {}, "response": []}
-[2019-12-17 10:35:31,698] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:25} WARNING - REQUEST_LOG	{"request": {}, "response": []}
-[2019-12-17 10:35:32,593] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:25} WARNING - REQUEST_LOG	{"request": {}, "response": []}
-[2019-12-17 10:35:33,404] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:25} WARNING - REQUEST_LOG	{"request": {}, "response": []}
-[2019-12-17 10:35:34,310] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:25} WARNING - REQUEST_LOG	{"request": {}, "response": []}
-[2019-12-17 10:35:41,075] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:25} WARNING - REQUEST_LOG	{"request": {}, "response": []}
-[2019-12-17 10:35:41,995] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:25} WARNING - REQUEST_LOG	{"request": {}, "response": []}
-[2019-12-17 10:35:42,848] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:25} WARNING - REQUEST_LOG	{"request": {}, "response": []}
-[2019-12-17 10:36:01,300] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:25} WARNING - REQUEST_LOG	{"request": {}, "response": []}
-[2019-12-17 10:36:06,429] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:25} WARNING - REQUEST_LOG	{"request": {}, "response": {"message": "NOT_FOUND"}}
-[2019-12-17 10:36:15,412] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:25} WARNING - REQUEST_LOG	{"request": {}, "response": {"message": "NOT_FOUND"}}
-[2019-12-17 10:37:09,909] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:25} WARNING - REQUEST_LOG	{"request": {}, "response": []}
-[2019-12-17 10:38:16,672] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:25} WARNING - REQUEST_LOG	{"request": {}, "response": []}
-[2019-12-17 10:44:00,025] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:25} WARNING - REQUEST_LOG	{"request": {}, "response": {"message": "The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again."}}
-[2019-12-17 10:44:10,108] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:25} WARNING - REQUEST_LOG	{"request": {}, "response": {"message": "The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again."}}
-[2019-12-17 10:44:44,424] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:30} WARNING - REQUEST_LOG	{"request": {"nama": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 4}, "response": {"message": {"name": "Missing required parameter in the JSON body"}}}
-[2019-12-17 10:49:04,557] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:31} WARNING - REQUEST_LOG	{"status_code": 400, "method": "POST", "code": "400 BAD REQUEST", "request": {"nama": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 4}, "response": {"message": {"name": "Missing required parameter in the JSON body"}}}
-[2019-12-17 10:49:30,357] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:31} WARNING - REQUEST_LOG	{"method": "POST", "code": "400 BAD REQUEST", "request": {"nama": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 4}, "response": {"message": {"name": "Missing required parameter in the JSON body"}}}
-[2019-12-17 10:50:39,434] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:31} WARNING - REQUEST_LOG	{"method": "POST", "code": "400 BAD REQUEST", "request": {}, "response": {"message": "Failed to decode JSON object: Expecting value: line 1 column 1 (char 0)"}}
-[2019-12-17 10:51:50,931] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:31} WARNING - REQUEST_LOG	{"method": "GET", "code": "404 NOT FOUND", "request": {}, "response": {"message": "The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again."}}
-[2019-12-17 10:51:56,153] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:31} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {}, "response": []}
-[2019-12-17 10:52:08,555] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:31} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {"nama": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 4}, "response": []}
-[2019-12-17 10:52:30,206] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:31} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 4}, "response": []}
-[2019-12-17 10:52:42,066] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:30} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 4}, "response": []}
-[2019-12-17 10:53:23,217] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:30} WARNING - REQUEST_LOG	{"method": "GET", "code": "404 NOT FOUND", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 4}, "response": {"message": "The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again."}}
-[2019-12-17 10:53:33,804] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:30} WARNING - REQUEST_LOG	{"method": "POST", "code": "400 BAD REQUEST", "request": {}, "response": {"message": "Failed to decode JSON object: Expecting value: line 1 column 1 (char 0)"}}
-[2019-12-17 10:53:38,565] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:30} WARNING - REQUEST_LOG	{"method": "POST", "code": "400 BAD REQUEST", "request": {}, "response": {"message": "Failed to decode JSON object: Expecting value: line 1 column 1 (char 0)"}}
-[2019-12-17 10:56:24,652] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:30} WARNING - REQUEST_LOG	{"method": "POST", "code": "400 BAD REQUEST", "request": {}, "response": {"message": "Failed to decode JSON object: Expecting value: line 1 column 1 (char 0)"}}
-[2019-12-17 10:58:06,241] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:30} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {}, "response": []}
-[2019-12-17 11:00:12,072] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:30} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {}, "response": []}
-[2019-12-17 11:00:21,193] {/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on / [GET]
+[2019-12-17 18:58:26,111] {/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /user/2 [GET]
+Traceback (most recent call last):
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/user/resources.py", line 38, in get
+    qry = qry.get(id)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 982, in get
+    return self._get_impl(ident, loading.load_on_pk_identity)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 1094, in _get_impl
+    return db_load_fn(self, primary_key_identity)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/sqlalchemy/orm/loading.py", line 221, in load_on_pk_identity
+    q._get_condition()
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 430, in _get_condition
+    "get", order_by=False, distinct=False
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 455, in _no_criterion_condition
+    self._no_criterion_assertion(meth, order_by, distinct)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 451, in _no_criterion_assertion
+    "Query with existing criterion. " % meth
+sqlalchemy.exc.InvalidRequestError: Query.get() being called on a Query with existing criterion. 
+[2019-12-17 18:58:26,113] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:43} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "request": {"name": "Wildan", "age": 22, "sex": "Male"}, "response": {"message": "Internal Server Error"}}
+[2019-12-17 18:58:28,061] {/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /user/3 [GET]
+Traceback (most recent call last):
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/user/resources.py", line 38, in get
+    qry = qry.get(id)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 982, in get
+    return self._get_impl(ident, loading.load_on_pk_identity)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 1094, in _get_impl
+    return db_load_fn(self, primary_key_identity)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/sqlalchemy/orm/loading.py", line 221, in load_on_pk_identity
+    q._get_condition()
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 430, in _get_condition
+    "get", order_by=False, distinct=False
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 455, in _no_criterion_condition
+    self._no_criterion_assertion(meth, order_by, distinct)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 451, in _no_criterion_assertion
+    "Query with existing criterion. " % meth
+sqlalchemy.exc.InvalidRequestError: Query.get() being called on a Query with existing criterion. 
+[2019-12-17 18:58:28,063] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:43} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "request": {"name": "Wildan", "age": 22, "sex": "Male"}, "response": {"message": "Internal Server Error"}}
+[2019-12-17 18:58:29,376] {/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /user/4 [GET]
+Traceback (most recent call last):
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/user/resources.py", line 38, in get
+    qry = qry.get(id)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 982, in get
+    return self._get_impl(ident, loading.load_on_pk_identity)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 1094, in _get_impl
+    return db_load_fn(self, primary_key_identity)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/sqlalchemy/orm/loading.py", line 221, in load_on_pk_identity
+    q._get_condition()
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 430, in _get_condition
+    "get", order_by=False, distinct=False
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 455, in _no_criterion_condition
+    self._no_criterion_assertion(meth, order_by, distinct)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 451, in _no_criterion_assertion
+    "Query with existing criterion. " % meth
+sqlalchemy.exc.InvalidRequestError: Query.get() being called on a Query with existing criterion. 
+[2019-12-17 18:58:29,378] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:43} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "request": {"name": "Wildan", "age": 22, "sex": "Male"}, "response": {"message": "Internal Server Error"}}
+[2019-12-17 18:58:30,879] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {"name": "Wildan", "age": 22, "sex": "Male"}, "response": [{"created_at": "Tue, 17 Dec 2019 18:56:42 -0000", "updated_at": "Tue, 17 Dec 2019 18:56:42 -0000", "id": 1, "name": "Wildanzzz", "age": 22, "sex": "Male"}, {"created_at": "Tue, 17 Dec 2019 18:56:42 -0000", "updated_at": "Tue, 17 Dec 2019 18:56:42 -0000", "id": 2, "name": "Wildan", "age": 22, "sex": "Male"}]}
+[2019-12-17 18:59:20,777] {/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /user/1 [DELETE]
+Traceback (most recent call last):
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/user/resources.py", line 78, in delete
+    qry = qry.get(id)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 982, in get
+    return self._get_impl(ident, loading.load_on_pk_identity)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 1094, in _get_impl
+    return db_load_fn(self, primary_key_identity)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/sqlalchemy/orm/loading.py", line 221, in load_on_pk_identity
+    q._get_condition()
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 430, in _get_condition
+    "get", order_by=False, distinct=False
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 455, in _no_criterion_condition
+    self._no_criterion_assertion(meth, order_by, distinct)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 451, in _no_criterion_assertion
+    "Query with existing criterion. " % meth
+sqlalchemy.exc.InvalidRequestError: Query.get() being called on a Query with existing criterion. 
+[2019-12-17 18:59:20,779] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:43} ERROR - REQUEST_LOG	{"method": "DELETE", "code": "500 INTERNAL SERVER ERROR", "request": {"name": "Wildan", "age": 22, "sex": "Male"}, "response": {"message": "Internal Server Error"}}
+[2019-12-17 18:59:28,279] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {"name": "Wildan", "age": 22, "sex": "Male"}, "response": [{"created_at": "Tue, 17 Dec 2019 18:56:42 -0000", "updated_at": "Tue, 17 Dec 2019 18:56:42 -0000", "id": 1, "name": "Wildanzzz", "age": 22, "sex": "Male"}, {"created_at": "Tue, 17 Dec 2019 18:56:42 -0000", "updated_at": "Tue, 17 Dec 2019 18:56:42 -0000", "id": 2, "name": "Wildan", "age": 22, "sex": "Male"}]}
+[2019-12-17 19:08:09,322] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {"name": "Wildan", "age": 22, "sex": "Male"}, "response": [{"created_at": "Tue, 17 Dec 2019 18:56:42 -0000", "updated_at": "Tue, 17 Dec 2019 18:56:42 -0000", "id": 1, "name": "Wildanzzz", "age": 22, "sex": "Male"}, {"created_at": "Tue, 17 Dec 2019 18:56:42 -0000", "updated_at": "Tue, 17 Dec 2019 18:56:42 -0000", "id": 2, "name": "Wildan", "age": 22, "sex": "Male"}]}
+[2019-12-17 19:08:12,394] {/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /user/1 [GET]
+Traceback (most recent call last):
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/user/resources.py", line 38, in get
+    qry = Users.get(id).filter_by(deleted_status=False)
+AttributeError: type object 'Users' has no attribute 'get'
+[2019-12-17 19:08:12,395] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:43} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "request": {"name": "Wildan", "age": 22, "sex": "Male"}, "response": {"message": "Internal Server Error"}}
+[2019-12-17 19:08:27,181] {/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /user/1 [GET]
+Traceback (most recent call last):
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/user/resources.py", line 38, in get
+    qry = Users.query.get(id).filter_by(deleted_status=False)
+AttributeError: 'Users' object has no attribute 'filter_by'
+[2019-12-17 19:08:27,184] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:43} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "request": {"name": "Wildan", "age": 22, "sex": "Male"}, "response": {"message": "Internal Server Error"}}
+[2019-12-17 19:08:50,315] {/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /user/1 [GET]
+Traceback (most recent call last):
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/user/resources.py", line 38, in get
+    qry = Users.query.get(id).filter_by(deleted_status=False)
+AttributeError: 'Users' object has no attribute 'filter_by'
+[2019-12-17 19:08:50,317] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:43} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "request": {"name": "Wildan", "age": 22, "sex": "Male"}, "response": {"message": "Internal Server Error"}}
+[2019-12-17 19:09:46,040] {/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /user/1 [GET]
+Traceback (most recent call last):
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/user/resources.py", line 38, in get
+    qry = Users.query.get(id).filter_by(deleted_status=False)
+AttributeError: 'Users' object has no attribute 'filter_by'
+[2019-12-17 19:09:46,042] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:43} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "request": {"name": "Wildan", "age": 22, "sex": "Male"}, "response": {"message": "Internal Server Error"}}
+[2019-12-17 19:10:15,367] {/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /user/1 [GET]
+Traceback (most recent call last):
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/user/resources.py", line 38, in get
+    qry = Users.query.get(id).where(deleted_status=False)
+AttributeError: 'Users' object has no attribute 'where'
+[2019-12-17 19:10:15,370] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:43} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "request": {"name": "Wildan", "age": 22, "sex": "Male"}, "response": {"message": "Internal Server Error"}}
+[2019-12-17 19:10:42,196] {/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /user/1 [GET]
+Traceback (most recent call last):
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/user/resources.py", line 38, in get
+    qry = Users.filter_by(deleted_status=False).get(id)
+AttributeError: type object 'Users' has no attribute 'filter_by'
+[2019-12-17 19:10:42,198] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:43} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "request": {"name": "Wildan", "age": 22, "sex": "Male"}, "response": {"message": "Internal Server Error"}}
+[2019-12-17 19:10:55,362] {/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /user/1 [GET]
+Traceback (most recent call last):
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/user/resources.py", line 38, in get
+    qry = Users.query.filter_by(deleted_status=False).get(id)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 982, in get
+    return self._get_impl(ident, loading.load_on_pk_identity)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 1094, in _get_impl
+    return db_load_fn(self, primary_key_identity)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/sqlalchemy/orm/loading.py", line 221, in load_on_pk_identity
+    q._get_condition()
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 430, in _get_condition
+    "get", order_by=False, distinct=False
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 455, in _no_criterion_condition
+    self._no_criterion_assertion(meth, order_by, distinct)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 451, in _no_criterion_assertion
+    "Query with existing criterion. " % meth
+sqlalchemy.exc.InvalidRequestError: Query.get() being called on a Query with existing criterion. 
+[2019-12-17 19:10:55,367] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:43} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "request": {"name": "Wildan", "age": 22, "sex": "Male"}, "response": {"message": "Internal Server Error"}}
+[2019-12-17 19:13:20,441] {/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /user/1 [GET]
+Traceback (most recent call last):
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/user/resources.py", line 38, in get
+    qry = Users.query.id(id)
+AttributeError: 'BaseQuery' object has no attribute 'id'
+[2019-12-17 19:13:20,447] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:43} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "request": {"name": "Wildan", "age": 22, "sex": "Male"}, "response": {"message": "Internal Server Error"}}
+[2019-12-17 19:13:35,031] {/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /user/1 [GET]
+Traceback (most recent call last):
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/user/resources.py", line 38, in get
+    qry = Users.query(id)
+TypeError: 'BaseQuery' object is not callable
+[2019-12-17 19:13:35,036] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:43} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "request": {"name": "Wildan", "age": 22, "sex": "Male"}, "response": {"message": "Internal Server Error"}}
+[2019-12-17 19:14:09,270] {/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /user/1 [GET]
+Traceback (most recent call last):
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/user/resources.py", line 39, in get
+    if qry["deleted_status"] is True or qry is None:
+TypeError: 'Users' object is not subscriptable
+[2019-12-17 19:14:09,273] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:43} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "request": {"name": "Wildan", "age": 22, "sex": "Male"}, "response": {"message": "Internal Server Error"}}
+[2019-12-17 19:14:58,169] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {"name": "Wildan", "age": 22, "sex": "Male"}, "response": {"created_at": "Tue, 17 Dec 2019 18:56:42 -0000", "updated_at": "Tue, 17 Dec 2019 18:56:42 -0000", "id": 1, "name": "Wildanzzz", "age": 22, "sex": "Male"}}
+[2019-12-17 19:17:14,721] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {"name": "Wildan", "age": 22, "sex": "Male"}, "response": {"created_at": "Tue, 17 Dec 2019 18:56:42 -0000", "updated_at": "Tue, 17 Dec 2019 18:56:42 -0000", "id": 1, "name": "Wildanzzz", "age": 22, "sex": "Male"}}
+[2019-12-17 19:17:27,133] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:43} ERROR - REQUEST_LOG	{"method": "PUT", "code": "404 NOT FOUND", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male"}, "response": {"message": "NOT_FOUND"}}
+[2019-12-17 19:19:45,129] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male"}, "response": {"created_at": "Tue, 17 Dec 2019 18:56:42 -0000", "updated_at": "Tue, 17 Dec 2019 18:56:42 -0000", "id": 1, "name": "Wildanzzz", "age": 22, "sex": "Male"}}
+[2019-12-17 19:19:49,952] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "PUT", "code": "200 OK", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male"}, "response": {"created_at": "Tue, 17 Dec 2019 18:56:42 -0000", "updated_at": "Tue, 17 Dec 2019 19:19:40 -0000", "id": 1, "name": "Wildan Firdaus", "age": 22, "sex": "Male"}}
+[2019-12-17 19:20:04,872] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "DELETE", "code": "200 OK", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male"}, "response": {"message": "Deleted"}}
+[2019-12-17 19:20:10,811] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male"}, "response": {"created_at": "Tue, 17 Dec 2019 18:56:42 -0000", "updated_at": "Tue, 17 Dec 2019 19:19:40 -0000", "id": 1, "name": "Wildan Firdaus", "age": 22, "sex": "Male"}}
+[2019-12-17 19:20:45,289] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male"}, "response": [{"created_at": "Tue, 17 Dec 2019 18:56:42 -0000", "updated_at": "Tue, 17 Dec 2019 19:19:40 -0000", "id": 1, "name": "Wildan Firdaus", "age": 22, "sex": "Male"}, {"created_at": "Tue, 17 Dec 2019 18:56:42 -0000", "updated_at": "Tue, 17 Dec 2019 18:56:42 -0000", "id": 2, "name": "Wildan", "age": 22, "sex": "Male"}]}
+[2019-12-17 19:21:32,554] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male"}, "response": [{"created_at": "Tue, 17 Dec 2019 18:56:42 -0000", "updated_at": "Tue, 17 Dec 2019 19:19:40 -0000", "id": 1, "name": "Wildan Firdaus", "age": 22, "sex": "Male"}, {"created_at": "Tue, 17 Dec 2019 18:56:42 -0000", "updated_at": "Tue, 17 Dec 2019 18:56:42 -0000", "id": 2, "name": "Wildan", "age": 22, "sex": "Male"}]}
+[2019-12-17 19:21:40,549] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:43} ERROR - REQUEST_LOG	{"method": "DELETE", "code": "404 NOT FOUND", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male"}, "response": {"message": "NOT_FOUND"}}
+[2019-12-17 19:21:45,381] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "DELETE", "code": "200 OK", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male"}, "response": {"message": "Deleted"}}
+[2019-12-17 19:21:51,900] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:43} ERROR - REQUEST_LOG	{"method": "GET", "code": "404 NOT FOUND", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male"}, "response": {"message": "NOT_FOUND"}}
+[2019-12-17 19:21:54,668] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male"}, "response": [{"created_at": "Tue, 17 Dec 2019 18:56:42 -0000", "updated_at": "Tue, 17 Dec 2019 18:56:42 -0000", "id": 2, "name": "Wildan", "age": 22, "sex": "Male"}]}
+[2019-12-17 19:22:30,129] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:43} ERROR - REQUEST_LOG	{"method": "PUT", "code": "400 BAD REQUEST", "request": {}, "response": {"message": "The browser (or proxy) sent a request that this server could not understand."}}
+[2019-12-17 19:22:48,546] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:43} ERROR - REQUEST_LOG	{"method": "PUT", "code": "400 BAD REQUEST", "request": {}, "response": {"message": "The browser (or proxy) sent a request that this server could not understand."}}
+[2019-12-17 19:22:54,871] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:43} ERROR - REQUEST_LOG	{"method": "PUT", "code": "404 NOT FOUND", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male", "deleted_status": 0}, "response": {"message": "NOT_FOUND"}}
+[2019-12-17 19:23:27,464] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:43} ERROR - REQUEST_LOG	{"method": "GET", "code": "404 NOT FOUND", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male"}, "response": {"message": "NOT_FOUND"}}
+[2019-12-17 19:23:30,519] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male"}, "response": [{"created_at": "Tue, 17 Dec 2019 18:56:42 -0000", "updated_at": "Tue, 17 Dec 2019 18:56:42 -0000", "id": 2, "name": "Wildan", "age": 22, "sex": "Male"}]}
+[2019-12-17 19:44:16,066] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male"}, "response": []}
+[2019-12-17 19:45:29,180] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "POST", "code": "200 OK", "request": {"client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}, "response": {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 1, "client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}}
+[2019-12-17 19:46:10,451] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "POST", "code": "200 OK", "request": {"client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}, "response": {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 2, "client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}}
+[2019-12-17 19:46:11,305] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "POST", "code": "200 OK", "request": {"client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}, "response": {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 3, "client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}}
+[2019-12-17 19:46:12,148] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "POST", "code": "200 OK", "request": {"client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}, "response": {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 4, "client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}}
+[2019-12-17 19:46:21,002] {/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on / [GET]
 Traceback (most recent call last):
   File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
     response = self.full_dispatch_request()
@@ -44,7 +318,7 @@ Traceback (most recent call last):
     response = self.process_response(response)
   File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 2266, in process_response
     response = handler(response)
-  File "/home/alta-18/Documents/Alterra/FlaskPractice/app.py", line 30, in after_request
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py", line 36, in after_request
     "response": json.loads(response.data.decode("utf-8"))
   File "/usr/lib/python3.6/json/__init__.py", line 354, in loads
     return _default_decoder.decode(s)
@@ -53,13 +327,13 @@ Traceback (most recent call last):
   File "/usr/lib/python3.6/json/decoder.py", line 357, in raw_decode
     raise JSONDecodeError("Expecting value", s, err.value) from None
 json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-[2019-12-17 11:00:21,196] {/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py:1975} ERROR - Request finalizing failed with an error while handling an error
+[2019-12-17 19:46:21,004] {/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py:1975} ERROR - Request finalizing failed with an error while handling an error
 Traceback (most recent call last):
   File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1969, in finalize_request
     response = self.process_response(response)
   File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 2266, in process_response
     response = handler(response)
-  File "/home/alta-18/Documents/Alterra/FlaskPractice/app.py", line 30, in after_request
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py", line 43, in after_request
     "response": json.loads(response.data.decode("utf-8"))
   File "/usr/lib/python3.6/json/__init__.py", line 354, in loads
     return _default_decoder.decode(s)
@@ -68,66 +342,151 @@ Traceback (most recent call last):
   File "/usr/lib/python3.6/json/decoder.py", line 357, in raw_decode
     raise JSONDecodeError("Expecting value", s, err.value) from None
 json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-[2019-12-17 11:00:58,462] {/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on / [GET]
+[2019-12-17 19:46:24,134] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {"client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}, "response": [{"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 1, "client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}, {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 2, "client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}, {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 3, "client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}, {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 4, "client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}]}
+[2019-12-17 19:47:01,679] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:43} ERROR - REQUEST_LOG	{"method": "PUT", "code": "404 NOT FOUND", "request": {"client_key": "CLIENTzzz", "client_secret": "SECRET01", "status": true}, "response": {"message": "NOT_FOUND"}}
+[2019-12-17 19:47:04,934] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "PUT", "code": "200 OK", "request": {"client_key": "CLIENTzzz", "client_secret": "SECRET01", "status": true}, "response": {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 1, "client_key": "CLIENTzzz", "client_secret": "SECRET01", "status": true}}
+[2019-12-17 19:48:51,438] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "PUT", "code": "200 OK", "request": {"client_key": "CLIENTzzz", "client_secret": "SECRET01", "status": true}, "response": {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 1, "client_key": "CLIENTzzz", "client_secret": "SECRET01", "status": true}}
+[2019-12-17 19:49:19,967] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {"client_key": "CLIENTzzz", "client_secret": "SECRET01", "status": true}, "response": {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 1, "client_key": "CLIENTzzz", "client_secret": "SECRET01", "status": true}}
+[2019-12-17 19:49:29,354] {/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /client/1 [POST]
 Traceback (most recent call last):
-  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
-    return self.finalize_request(rv)
-  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1969, in finalize_request
-    response = self.process_response(response)
-  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 2266, in process_response
-    response = handler(response)
-  File "/home/alta-18/Documents/Alterra/FlaskPractice/app.py", line 30, in after_request
-    "response": json.loads(response.data.decode("utf-8"))
-  File "/usr/lib/python3.6/json/__init__.py", line 354, in loads
-    return _default_decoder.decode(s)
-  File "/usr/lib/python3.6/json/decoder.py", line 339, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-  File "/usr/lib/python3.6/json/decoder.py", line 357, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-[2019-12-17 11:00:58,464] {/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py:1975} ERROR - Request finalizing failed with an error while handling an error
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+TypeError: post() got an unexpected keyword argument 'id'
+[2019-12-17 19:49:29,356] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:43} ERROR - REQUEST_LOG	{"method": "POST", "code": "500 INTERNAL SERVER ERROR", "request": {"client_key": "CLIENTzzz", "client_secret": "SECRET01", "status": true}, "response": {"message": "Internal Server Error"}}
+[2019-12-17 19:49:33,115] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "POST", "code": "200 OK", "request": {"client_key": "CLIENTzzz", "client_secret": "SECRET01", "status": true}, "response": {"created_at": "Tue, 17 Dec 2019 19:49:16 -0000", "updated_at": "Tue, 17 Dec 2019 19:49:16 -0000", "id": 5, "client_key": "CLIENTzzz", "client_secret": "SECRET01", "status": true}}
+[2019-12-17 19:49:49,585] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "PUT", "code": "200 OK", "request": {"client_key": "CLIENTzzz", "client_secret": "SECRET01", "status": false}, "response": {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:49:16 -0000", "id": 1, "client_key": "CLIENTzzz", "client_secret": "SECRET01", "status": false}}
+[2019-12-17 19:50:08,242] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "PUT", "code": "200 OK", "request": {"client_key": "CLIENTzzz", "client_secret": "SECRET01", "status": true}, "response": {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:49:16 -0000", "id": 1, "client_key": "CLIENTzzz", "client_secret": "SECRET01", "status": true}}
+[2019-12-17 19:50:14,957] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "PUT", "code": "200 OK", "request": {"client_key": "CLIENTzzz", "client_secret": "SECRET01", "status": true}, "response": {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:49:16 -0000", "id": 1, "client_key": "CLIENTzzz", "client_secret": "SECRET01", "status": true}}
+[2019-12-17 19:50:16,757] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "PUT", "code": "200 OK", "request": {"client_key": "CLIENTzzz", "client_secret": "SECRET01", "status": true}, "response": {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:49:16 -0000", "id": 1, "client_key": "CLIENTzzz", "client_secret": "SECRET01", "status": true}}
+[2019-12-17 19:50:19,430] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "PUT", "code": "200 OK", "request": {"client_key": "CLIENTzzz", "client_secret": "SECRET01", "status": true}, "response": {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:49:16 -0000", "id": 1, "client_key": "CLIENTzzz", "client_secret": "SECRET01", "status": true}}
+[2019-12-17 19:50:27,173] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "PUT", "code": "200 OK", "request": {"client_key": "CLIENTzzz", "client_secret": "zzzz", "status": true}, "response": {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:49:16 -0000", "id": 1, "client_key": "CLIENTzzz", "client_secret": "zzzz", "status": true}}
+[2019-12-17 19:50:35,888] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "PUT", "code": "200 OK", "request": {"client_key": "CLIENTzzz", "client_secret": "zzzz", "status": false}, "response": {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:49:16 -0000", "id": 1, "client_key": "CLIENTzzz", "client_secret": "zzzz", "status": false}}
+[2019-12-17 19:50:44,740] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {"client_key": "CLIENTzzz", "client_secret": "zzzz", "status": false}, "response": {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:49:16 -0000", "id": 1, "client_key": "CLIENTzzz", "client_secret": "zzzz", "status": false}}
+[2019-12-17 19:50:54,524] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "PUT", "code": "200 OK", "request": {"client_key": "CLIENTzzz", "client_secret": "zzzz", "status": false}, "response": {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:49:16 -0000", "id": 1, "client_key": "CLIENTzzz", "client_secret": "zzzz", "status": false}}
+[2019-12-17 19:51:09,937] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:43} ERROR - REQUEST_LOG	{"method": "DELETE", "code": "404 NOT FOUND", "request": {"client_key": "CLIENTzzz", "client_secret": "zzzz", "status": false}, "response": {"message": "NOT_FOUND"}}
+[2019-12-17 19:51:20,034] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {"client_key": "CLIENTzzz", "client_secret": "zzzz", "status": false}, "response": [{"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 2, "client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}, {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 3, "client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}, {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 4, "client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}, {"created_at": "Tue, 17 Dec 2019 19:49:16 -0000", "updated_at": "Tue, 17 Dec 2019 19:49:16 -0000", "id": 5, "client_key": "CLIENTzzz", "client_secret": "SECRET01", "status": true}]}
+[2019-12-17 19:51:33,617] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "DELETE", "code": "200 OK", "request": {"client_key": "CLIENTzzz", "client_secret": "zzzz", "status": false}, "response": {"message": "Deleted"}}
+[2019-12-17 19:51:38,641] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:43} ERROR - REQUEST_LOG	{"method": "GET", "code": "404 NOT FOUND", "request": {"client_key": "CLIENTzzz", "client_secret": "zzzz", "status": false}, "response": {"message": "NOT_FOUND"}}
+[2019-12-17 19:51:42,339] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {"client_key": "CLIENTzzz", "client_secret": "zzzz", "status": false}, "response": [{"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 2, "client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}, {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 3, "client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}, {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 4, "client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}]}
+[2019-12-17 20:07:40,215] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {"client_key": "CLIENTzzz", "client_secret": "zzzz", "status": false}, "response": [{"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 2, "client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}, {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 3, "client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}, {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 4, "client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}]}
+[2019-12-17 20:08:27,477] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {"client_key": "CLIENTzzz", "client_secret": "zzzz", "status": false}, "response": {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:49:16 -0000", "id": 1, "client_key": "CLIENTzzz", "client_secret": "zzzz", "status": false}}
+[2019-12-17 20:08:33,126] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {"client_key": "CLIENTzzz", "client_secret": "zzzz", "status": false}, "response": [{"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 2, "client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}, {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 3, "client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}, {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 4, "client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}]}
+[2019-12-17 20:09:51,999] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {"client_key": "CLIENTzzz", "client_secret": "zzzz", "status": false}, "response": [{"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 2, "client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}, {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 3, "client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}, {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 4, "client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}]}
+[2019-12-17 20:11:05,152] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {"client_key": "CLIENTzzz", "client_secret": "zzzz", "status": false}, "response": [{"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:49:16 -0000", "id": 1, "client_key": "CLIENTzzz", "client_secret": "zzzz", "status": false}]}
+[2019-12-17 20:11:19,195] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {"client_key": "CLIENTzzz", "client_secret": "zzzz", "status": false}, "response": [{"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:49:16 -0000", "id": 1, "client_key": "CLIENTzzz", "client_secret": "zzzz", "status": false}]}
+[2019-12-17 20:12:03,663] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {"client_key": "CLIENTzzz", "client_secret": "zzzz", "status": false}, "response": [{"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:49:16 -0000", "id": 1, "client_key": "CLIENTzzz", "client_secret": "zzzz", "status": false}]}
+[2019-12-17 20:12:39,922] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": null, "response": [{"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:49:16 -0000", "id": 1, "client_key": "CLIENTzzz", "client_secret": "zzzz", "status": false}]}
+[2019-12-17 20:13:16,735] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": null, "response": [{"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:49:16 -0000", "id": 1, "client_key": "CLIENTzzz", "client_secret": "zzzz", "status": false}, {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 2, "client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}, {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 3, "client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}, {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 4, "client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}]}
+[2019-12-17 20:15:21,435] {/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /client [GET]
 Traceback (most recent call last):
-  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1969, in finalize_request
-    response = self.process_response(response)
-  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 2266, in process_response
-    response = handler(response)
-  File "/home/alta-18/Documents/Alterra/FlaskPractice/app.py", line 30, in after_request
-    "response": json.loads(response.data.decode("utf-8"))
-  File "/usr/lib/python3.6/json/__init__.py", line 354, in loads
-    return _default_decoder.decode(s)
-  File "/usr/lib/python3.6/json/decoder.py", line 339, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-  File "/usr/lib/python3.6/json/decoder.py", line 357, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-[2019-12-17 11:01:22,166] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:30} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {}, "response": []}
-[2019-12-17 11:01:31,489] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:30} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {}, "response": []}
-[2019-12-17 11:05:33,876] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:30} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {}, "response": []}
-[2019-12-17 11:07:06,816] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:30} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {}, "response": []}
-[2019-12-17 11:07:16,219] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:30} WARNING - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {}, "response": []}
-[2019-12-17 11:07:30,397] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:30} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {}, "response": []}
-[2019-12-17 11:07:43,259] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:30} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {}, "response": []}
-[2019-12-17 11:07:51,149] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:30} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 4}, "response": []}
-[2019-12-17 11:08:31,129] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:30} INFO - REQUEST_LOG	{"method": "POST", "code": "200 OK", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 4}, "response": {"name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 4, "created_at": "2019-12-17, 11:08:31", "updated_at": "2019-12-17, 11:08:31", "id": 1}}
-[2019-12-17 11:08:41,223] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:30} INFO - REQUEST_LOG	{"method": "POST", "code": "400 BAD REQUEST", "request": {}, "response": {"message": "Failed to decode JSON object: Expecting value: line 1 column 1 (char 0)"}}
-[2019-12-17 11:10:33,514] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:30} INFO - REQUEST_LOG	{"method": "POST", "code": "400 BAD REQUEST", "request": {}, "response": {"message": "Failed to decode JSON object: Expecting value: line 1 column 1 (char 0)"}}
-[2019-12-17 11:10:39,290] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:30} INFO - REQUEST_LOG	{"method": "POST", "code": "400 BAD REQUEST", "request": {}, "response": {"message": "Failed to decode JSON object: Expecting value: line 1 column 1 (char 0)"}}
-[2019-12-17 11:10:44,286] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:30} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {}, "response": []}
-[2019-12-17 11:13:20,505] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:30} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {}, "response": []}
-[2019-12-17 11:13:27,013] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:30} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {}, "response": []}
-[2019-12-17 11:13:40,110] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:30} INFO - REQUEST_LOG	{"method": "GET", "code": "404 NOT FOUND", "request": {}, "response": {"message": "The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again."}}
-[2019-12-17 11:13:56,437] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:30} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {}, "response": []}
-[2019-12-17 11:17:17,790] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:31} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {}, "response": []}
-[2019-12-17 11:17:26,614] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:38} ERROR - REQUEST_LOG	{"method": "GET", "code": "404 NOT FOUND", "request": {}, "response": {"message": "The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again."}}
-[2019-12-17 11:17:38,007] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:38} ERROR - REQUEST_LOG	{"method": "GET", "code": "404 NOT FOUND", "request": {}, "response": {"message": "NOT_FOUND"}}
-[2019-12-17 11:17:54,794] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:38} ERROR - REQUEST_LOG	{"method": "POST", "code": "400 BAD REQUEST", "request": {}, "response": {"message": "Failed to decode JSON object: Expecting value: line 1 column 1 (char 0)"}}
-[2019-12-17 11:18:04,721] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:31} INFO - REQUEST_LOG	{"method": "POST", "code": "200 OK", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 4}, "response": {"name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 4, "created_at": "2019-12-17, 11:18:04", "updated_at": "2019-12-17, 11:18:04", "id": 1}}
-[2019-12-17 11:18:20,038] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:38} ERROR - REQUEST_LOG	{"method": "POST", "code": "400 BAD REQUEST", "request": {"nama": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 4}, "response": {"message": {"name": "Missing required parameter in the JSON body"}}}
-[2019-12-17 11:18:39,637] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:31} INFO - REQUEST_LOG	{"method": "POST", "code": "200 OK", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 4}, "response": {"name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 4, "created_at": "2019-12-17, 11:18:39", "updated_at": "2019-12-17, 11:18:39", "id": 2}}
-[2019-12-17 11:18:49,400] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:31} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 4}, "response": [{"name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 4, "created_at": "2019-12-17, 11:18:04", "updated_at": "2019-12-17, 11:18:04", "id": 1}, {"name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 4, "created_at": "2019-12-17, 11:18:39", "updated_at": "2019-12-17, 11:18:39", "id": 2}]}
-[2019-12-17 11:19:03,948] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:38} ERROR - REQUEST_LOG	{"method": "PUT", "code": "404 NOT FOUND", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 4}, "response": {"message": "NOT_FOUND"}}
-[2019-12-17 11:19:35,712] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:31} INFO - REQUEST_LOG	{"method": "PUT", "code": "200 OK", "request": {"name": "Wildan", "age": 22, "sex": "Male", "client_id": 4}, "response": {"name": "Wildan", "age": 22, "sex": "Male", "client_id": 4, "created_at": "2019-12-17, 11:18:04", "updated_at": "2019-12-17, 11:19:35", "id": 1}}
-[2019-12-17 11:19:48,677] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:38} ERROR - REQUEST_LOG	{"method": "PUT", "code": "404 NOT FOUND", "request": {"name": "Wildan", "age": 22, "sex": "Male", "client_id": 4}, "response": {"message": "NOT_FOUND"}}
-[2019-12-17 11:19:54,341] {/home/alta-18/Documents/Alterra/FlaskPractice/app.py:31} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {"name": "Wildan", "age": 22, "sex": "Male", "client_id": 4}, "response": [{"name": "Wildan", "age": 22, "sex": "Male", "client_id": 4, "created_at": "2019-12-17, 11:18:04", "updated_at": "2019-12-17, 11:19:35", "id": 1}, {"name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 4, "created_at": "2019-12-17, 11:18:39", "updated_at": "2019-12-17, 11:18:39", "id": 2}]}
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/client/resources.py", line 25, in get
+    if args["status"].lower() == "true":
+AttributeError: 'NoneType' object has no attribute 'lower'
+[2019-12-17 20:15:21,437] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:43} ERROR - REQUEST_LOG	{"method": "GET", "code": "500 INTERNAL SERVER ERROR", "request": null, "response": {"message": "Internal Server Error"}}
+[2019-12-17 20:16:05,049] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": null, "response": [{"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:49:16 -0000", "id": 1, "client_key": "CLIENTzzz", "client_secret": "zzzz", "status": false}, {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 2, "client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}, {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 3, "client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}, {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 4, "client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}]}
+[2019-12-17 20:16:19,687] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": null, "response": [{"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:49:16 -0000", "id": 1, "client_key": "CLIENTzzz", "client_secret": "zzzz", "status": false}, {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 2, "client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}, {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 3, "client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}]}
+[2019-12-17 20:16:26,423] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": null, "response": [{"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 4, "client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}]}
+[2019-12-17 20:16:32,317] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": null, "response": [{"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:49:16 -0000", "id": 1, "client_key": "CLIENTzzz", "client_secret": "zzzz", "status": false}, {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 2, "client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}, {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 3, "client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}, {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 4, "client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}]}
+[2019-12-17 20:17:10,586] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": null, "response": [{"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:49:16 -0000", "id": 1, "client_key": "CLIENTzzz", "client_secret": "zzzz", "status": false}, {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 2, "client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}, {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 3, "client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}, {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 4, "client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}]}
+[2019-12-17 20:17:14,530] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": null, "response": []}
+[2019-12-17 20:18:13,243] {/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /user [POST]
+Traceback (most recent call last):
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/user/resources.py", line 53, in post
+    if args["client_id"] in Clients.query(Clients.id):
+TypeError: 'BaseQuery' object is not callable
+[2019-12-17 20:18:13,246] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:43} ERROR - REQUEST_LOG	{"method": "POST", "code": "500 INTERNAL SERVER ERROR", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 5}, "response": {"message": "Internal Server Error"}}
+[2019-12-17 20:23:55,871] {/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /user [POST]
+Traceback (most recent call last):
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/user/resources.py", line 53, in post
+    if args["client_id"] in marshal(Clients.query(Clients.id), Clients.response_fields):
+TypeError: 'BaseQuery' object is not callable
+[2019-12-17 20:23:55,871] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:43} ERROR - REQUEST_LOG	{"method": "POST", "code": "500 INTERNAL SERVER ERROR", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 5}, "response": {"message": "Internal Server Error"}}
+[2019-12-17 20:24:28,400] {/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /user [POST]
+Traceback (most recent call last):
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/user/resources.py", line 53, in post
+    if args["client_id"] in marshal(Clients.query(Clients.id), Clients.response_fields):
+TypeError: 'BaseQuery' object is not callable
+[2019-12-17 20:24:28,402] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:43} ERROR - REQUEST_LOG	{"method": "POST", "code": "500 INTERNAL SERVER ERROR", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 5}, "response": {"message": "Internal Server Error"}}
+[2019-12-17 20:29:02,737] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:43} ERROR - REQUEST_LOG	{"method": "POST", "code": "404 NOT FOUND", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 5}, "response": {"message": "NOT_FOUND"}}
+[2019-12-17 20:29:31,686] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:43} ERROR - REQUEST_LOG	{"method": "POST", "code": "404 NOT FOUND", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 6}, "response": {"message": "NOT_FOUND"}}
+[2019-12-17 20:29:40,030] {/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py:1891} ERROR - Exception on /user [POST]
+Traceback (most recent call last):
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/.flaskblog_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/user/resources.py", line 54, in post
+    user = Users(args["name"], args["age"], args["sex"], args["client_id"])
+TypeError: __init__() takes 4 positional arguments but 5 were given
+[2019-12-17 20:29:40,033] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:43} ERROR - REQUEST_LOG	{"method": "POST", "code": "500 INTERNAL SERVER ERROR", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 1}, "response": {"message": "Internal Server Error"}}
+[2019-12-17 20:30:58,522] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "POST", "code": "200 OK", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 1}, "response": {"created_at": "Tue, 17 Dec 2019 20:30:56 -0000", "updated_at": "Tue, 17 Dec 2019 20:30:56 -0000", "id": 1, "name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 1}}
+[2019-12-17 20:31:09,972] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 1}, "response": [{"created_at": "Tue, 17 Dec 2019 20:30:56 -0000", "updated_at": "Tue, 17 Dec 2019 20:30:56 -0000", "id": 1, "name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 1}]}
+[2019-12-17 20:37:13,589] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 1}, "response": [{"created_at": "Tue, 17 Dec 2019 20:30:56 -0000", "updated_at": "Tue, 17 Dec 2019 20:30:56 -0000", "id": 1, "name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 1}]}
+[2019-12-17 20:37:36,748] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "POST", "code": "200 OK", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 2}, "response": {"created_at": "Tue, 17 Dec 2019 20:37:10 -0000", "updated_at": "Tue, 17 Dec 2019 20:37:10 -0000", "id": 2, "name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 2}}
+[2019-12-17 20:37:47,832] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 2}, "response": [{"created_at": "Tue, 17 Dec 2019 20:30:56 -0000", "updated_at": "Tue, 17 Dec 2019 20:30:56 -0000", "id": 1, "name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 1}, {"created_at": "Tue, 17 Dec 2019 20:37:10 -0000", "updated_at": "Tue, 17 Dec 2019 20:37:10 -0000", "id": 2, "name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 2}]}
+[2019-12-17 20:38:03,842] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:43} ERROR - REQUEST_LOG	{"method": "DELETE", "code": "404 NOT FOUND", "request": null, "response": {"message": "NOT_FOUND"}}
+[2019-12-17 20:38:07,274] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "DELETE", "code": "200 OK", "request": null, "response": {"message": "Deleted"}}
+[2019-12-17 20:38:13,786] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 2}, "response": [{"created_at": "Tue, 17 Dec 2019 20:30:56 -0000", "updated_at": "Tue, 17 Dec 2019 20:30:56 -0000", "id": 1, "name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 1}, {"created_at": "Tue, 17 Dec 2019 20:37:10 -0000", "updated_at": "Tue, 17 Dec 2019 20:37:10 -0000", "id": 2, "name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 2}]}
+[2019-12-17 20:38:21,044] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 2}, "response": [{"created_at": "Tue, 17 Dec 2019 20:30:56 -0000", "updated_at": "Tue, 17 Dec 2019 20:30:56 -0000", "id": 1, "name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 1}, {"created_at": "Tue, 17 Dec 2019 20:37:10 -0000", "updated_at": "Tue, 17 Dec 2019 20:37:10 -0000", "id": 2, "name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 2}]}
+[2019-12-17 20:38:31,137] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": null, "response": [{"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 2, "client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}, {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 3, "client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}, {"created_at": "Tue, 17 Dec 2019 19:44:08 -0000", "updated_at": "Tue, 17 Dec 2019 19:44:08 -0000", "id": 4, "client_key": "CLIENT01", "client_secret": "SECRET01", "status": true}]}
+[2019-12-17 20:38:39,061] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 2}, "response": [{"created_at": "Tue, 17 Dec 2019 20:30:56 -0000", "updated_at": "Tue, 17 Dec 2019 20:30:56 -0000", "id": 1, "name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 1}, {"created_at": "Tue, 17 Dec 2019 20:37:10 -0000", "updated_at": "Tue, 17 Dec 2019 20:37:10 -0000", "id": 2, "name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 2}]}
+[2019-12-17 20:40:58,850] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 2}, "response": [{"created_at": "Tue, 17 Dec 2019 20:37:10 -0000", "updated_at": "Tue, 17 Dec 2019 20:37:10 -0000", "id": 2, "name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 2}]}
+[2019-12-17 20:42:43,373] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 2}, "response": {"created_at": "Tue, 17 Dec 2019 20:37:10 -0000", "updated_at": "Tue, 17 Dec 2019 20:37:10 -0000", "id": 2, "name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 2}}
+[2019-12-17 20:42:45,993] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 2}, "response": {"created_at": "Tue, 17 Dec 2019 20:30:56 -0000", "updated_at": "Tue, 17 Dec 2019 20:30:56 -0000", "id": 1, "name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 1}}
+[2019-12-17 20:42:56,589] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:43} ERROR - REQUEST_LOG	{"method": "GET", "code": "404 NOT FOUND", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 2}, "response": {"message": "NOT_FOUND"}}
+[2019-12-17 20:42:58,431] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:36} INFO - REQUEST_LOG	{"method": "GET", "code": "200 OK", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 2}, "response": {"created_at": "Tue, 17 Dec 2019 20:37:10 -0000", "updated_at": "Tue, 17 Dec 2019 20:37:10 -0000", "id": 2, "name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 2}}
+[2019-12-17 20:42:59,729] {/home/alta-18/Documents/Alterra/FlaskPractice/blueprints/__init__.py:43} ERROR - REQUEST_LOG	{"method": "GET", "code": "404 NOT FOUND", "request": {"name": "Wildan Firdaus", "age": 22, "sex": "Male", "client_id": 2}, "response": {"message": "NOT_FOUND"}}
