@@ -18,10 +18,16 @@ app.register_blueprint(blueprint_user, url_prefix="/user")
 
 @app.after_request
 def after_request(response):
-    app.logger.warning("REQUEST_LOG\t%s", json.dumps({
-        "request": request.get_json(),
-        "response": json.loads(response.data.decode("utf-8"))
-    }))
+    if request.method == "GET":
+        app.logger.warning("REQUEST_LOG\t%s", json.dumps({
+            "request": request.args.to_dict(),
+            "response": json.loads(response.data.decode("utf-8"))
+        }))
+    else:
+        app.logger.warning("REQUEST_LOG\t%s", json.dumps({
+            "request": request.get_json(),
+            "response": json.loads(response.data.decode("utf-8"))
+        }))
     return response
 
 
