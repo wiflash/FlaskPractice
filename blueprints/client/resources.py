@@ -16,7 +16,6 @@ class ClientResources(Resource):
             parser =reqparse.RequestParser()
             parser.add_argument("p", type=int, location="args", default=1)
             parser.add_argument("rp", type=int, location="args", default=25)
-            # parser.add_argument("status", type=bool, location="args")
             parser.add_argument("status", location="args", help="invalid status value", choices=("true","false","True","False"))
             args = parser.parse_args()
             offset = (args["p"] - 1)*args["rp"]
@@ -40,11 +39,13 @@ class ClientResources(Resource):
             return marshal(qry, Clients.response_fields), 200, {"Content-Type": "application/json"}
 
     def post(self):
+        print("MASOKKK 1")
         parser = reqparse.RequestParser()
         parser.add_argument("client_key", location="json", required=True)
         parser.add_argument("client_secret", location="json", required=True)
-        parser.add_argument("status", type=bool, location="json", required=True)
+        parser.add_argument("status", type=bool, location="json")
         args = parser.parse_args()
+        print("MASOKKK")
         client = Clients(args["client_key"], args["client_secret"], args["status"])
         db.session.add(client)
         db.session.commit()

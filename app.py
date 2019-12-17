@@ -23,4 +23,4 @@ if __name__ == "__main__":
         )
         log_handler.setFormatter(formatter)
         app.logger.addHandler(log_handler)
-        app.run(debug=False)
+        app.run(debug=True)

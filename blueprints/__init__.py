@@ -47,7 +47,9 @@ def after_request(response):
 
 from blueprints.user.resources import blueprint_user
 from blueprints.client.resources import blueprint_client
+from blueprints.book.resources import blueprint_book
 app.register_blueprint(blueprint_user, url_prefix="/user")
 app.register_blueprint(blueprint_client, url_prefix="/client")
+app.register_blueprint(blueprint_book, url_prefix="/book")
 db.create_all()
 # db.session.commit()
