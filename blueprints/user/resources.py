@@ -1,6 +1,7 @@
 from flask_restful import Resource, Api, reqparse, marshal
 from flask import Blueprint
-from blueprints import db
+from flask_jwt_extended import jwt_required
+from blueprints import db, internal_required
 from sqlalchemy import desc
 from datetime import datetime
 from blueprints.user.model import *
@@ -11,6 +12,8 @@ blueprint_user = Blueprint("user", __name__)
 api = Api(blueprint_user)
 
 class UserResources(Resource):
+    @jwt_required
+    @internal_required
     def get(self, id=None):
         if id is None:
             rows = []
@@ -47,6 +50,8 @@ class UserResources(Resource):
                 return {"message": "client_id not found"}, 404, {"Content-Type": "application/json"}
             return marshal(qry, Users.response_fields), 200, {"Content-Type": "application/json"}
 
+    @jwt_required
+    @internal_required
     def post(self):
         parser = reqparse.RequestParser()
         parser.add_argument("name", location="json", required=True)
@@ -62,6 +67,8 @@ class UserResources(Resource):
         db.session.commit()
         return marshal(user, Users.response_fields), 200, {"Content-Type": "application/json"}
 
+    @jwt_required
+    @internal_required
     def put(self, id=None):
         parser = reqparse.RequestParser()
         parser.add_argument("name", location="json", required=True)
@@ -79,10 +86,13 @@ class UserResources(Resource):
                 qry.age = args["age"]
                 qry.sex = args["sex"]
                 qry.client_id = args["client_id"]
+                qry.updated_at = datetime.now()
                 db.session.commit()
                 return marshal(qry, Users.response_fields), 200, {"Content-Type": "application/json"}
         return {"message": "NOT_FOUND"}, 404, {"Content-Type": "application/json"}
 
+    @jwt_required
+    @internal_required
     def delete(self, id=None):
         if id is not None:
             qry = Users.query.get(id)
@@ -91,9 +101,6 @@ class UserResources(Resource):
                 db.session.commit()
                 return {"message": "Deleted"}, 200, {"Content-Type": "application/json"}
         return {"message": "NOT_FOUND"}, 404, {"Content-Type": "application/json"}
-#     def patch(self):
-#         return {"message": "Not yet implemented"}, 501, {
-#             "Content-Type": "application/json"
-#         }
+
 
 api.add_resource(UserResources, "", "/<int:id>")

@@ -11,7 +11,7 @@ class Users(db.Model):
     age = db.Column(db.Integer, nullable=False)
     sex = db.Column(db.String(10), nullable=False)
     created_at = db.Column(db.DateTime, default=datetime.now())
-    updated_at = db.Column(db.DateTime, onupdate=datetime.now(), default=datetime.now())
+    updated_at = db.Column(db.DateTime, default=datetime.now())
     deleted_status = db.Column(db.Boolean, default=False)
 
     response_fields = {

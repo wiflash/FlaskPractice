@@ -10,7 +10,7 @@ class Books(db.Model):
     isbn = db.Column(db.String(100), nullable=False)
     writer = db.Column(db.String(100), nullable=False)
     created_at = db.Column(db.DateTime, default=datetime.now())
-    updated_at = db.Column(db.DateTime, onupdate=datetime.now(), default=datetime.now())
+    updated_at = db.Column(db.DateTime, default=datetime.now())
     deleted_status = db.Column(db.Boolean, default=False)
 
     response_fields = {
