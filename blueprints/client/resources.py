@@ -33,19 +33,15 @@ class ClientResources(Resource):
         else:
             qry = Clients.query.get(id)
             if qry.deleted_status is True or qry is None:
-                return {"message": "NOT_FOUND"}, 404, {
-                    "Content-Type": "application/json"
-                }
+                return {"message": "NOT_FOUND"}, 404, {"Content-Type": "application/json"}
             return marshal(qry, Clients.response_fields), 200, {"Content-Type": "application/json"}
 
     def post(self):
-        print("MASOKKK 1")
         parser = reqparse.RequestParser()
         parser.add_argument("client_key", location="json", required=True)
         parser.add_argument("client_secret", location="json", required=True)
         parser.add_argument("status", type=bool, location="json")
         args = parser.parse_args()
-        print("MASOKKK")
         client = Clients(args["client_key"], args["client_secret"], args["status"])
         db.session.add(client)
         db.session.commit()
