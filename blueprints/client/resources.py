@@ -1,4 +1,4 @@
-from flask_restful import Resource, Api, reqparse, marshal
+from flask_restful import Resource, Api, reqparse, marshal, inputs
 from flask import Blueprint
 from flask_jwt_extended import jwt_required
 from blueprints import db, internal_required
@@ -21,16 +21,13 @@ class ClientResources(Resource):
             parser =reqparse.RequestParser()
             parser.add_argument("p", type=int, location="args", default=1)
             parser.add_argument("rp", type=int, location="args", default=25)
-            parser.add_argument("status", location="args", help="invalid status value", choices=("true","false","True","False"))
+            parser.add_argument("status", location="args", type=inputs.boolean)
             args = parser.parse_args()
             offset = (args["p"] - 1)*args["rp"]
             
             qry = Clients.query.filter_by(deleted_status=False)
             if args["status"] is not None:
-                if args["status"].lower() == "true":
-                    qry = qry.filter_by(status=True)
-                elif not args["status"].lower() == "false":
-                    qry = qry.filter_by(status=False)
+                qry = qry.filter_by(status=args["status"])
             qry = qry.limit(args["rp"]).offset(offset)
             for row in qry.all():
                 rows.append(marshal(row, Clients.response_fields))
