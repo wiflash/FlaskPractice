@@ -43,11 +43,11 @@ class UserResources(Resource):
             return rows, 200
         else:
             qry = Users.query.get(id)
-            client_with_id = Clients.query.get(qry.client_id)
-            if qry.deleted_status is True or qry is None:
+            if qry is None or qry.deleted_status is True:
                 return {"message": "NOT_FOUND"}, 404, {"Content-Type": "application/json"}
+            client_with_id = Clients.query.get(qry.client_id)
             if client_with_id.deleted_status is True:
-                return {"message": "client_id not found"}, 404, {"Content-Type": "application/json"}
+                return {"message": "NOT_FOUND"}, 404, {"Content-Type": "application/json"}
             return marshal(qry, Users.response_fields), 200, {"Content-Type": "application/json"}
 
     @jwt_required
@@ -81,7 +81,7 @@ class UserResources(Resource):
             return {"message": "client_id not found"}, 404, {"Content-Type": "application/json"}
         if id is not None:
             qry = Users.query.get(id)
-            if qry.deleted_status is False and qry is not None:
+            if qry is not None and qry.deleted_status is False:
                 qry.name = args["name"]
                 qry.age = args["age"]
                 qry.sex = args["sex"]
@@ -96,7 +96,7 @@ class UserResources(Resource):
     def delete(self, id=None):
         if id is not None:
             qry = Users.query.get(id)
-            if qry.deleted_status is False and qry is not None:
+            if qry is not None and qry.deleted_status is False:
                 qry.deleted_status = True
                 db.session.commit()
                 return {"message": "Deleted"}, 200, {"Content-Type": "application/json"}

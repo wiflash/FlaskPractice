@@ -6,12 +6,20 @@ from flask_script import Manager
 from flask_jwt_extended import JWTManager, verify_jwt_in_request, get_jwt_claims
 from datetime import timedelta
 from functools import wraps
-import json, random, string
+import json, random, string, os
 
 
 app = Flask(__name__) # membuat semua blueprint
 app.config["APP_DEBUG"] = True
-app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://root:@localhost:3306/latihan_flask"
+try:
+    env = os.environ.get("FLASK_ENV", "development")
+    if env == "testing":
+        app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://root:@localhost:3306/latihan_flask_test"
+    else:
+        app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://root:@localhost:3306/latihan_flask"
+except Exception as error:
+    raise error
+    
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.config["JWT_SECRET_KEY"] = "".join(random.choice(string.ascii_letters) for i in range(32))
 app.config["JWT_ACCESS_TOKEN_EXPIRES"] = timedelta(minutes=30)

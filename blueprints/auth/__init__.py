@@ -25,6 +25,6 @@ class CreateTokenResources(Resource):
             client_claims_data = marshal(qry, Clients.jwt_claim_fields)
             client_claims_data["internal_status"] = False
         token = create_access_token(identity=args["client_key"], user_claims=client_claims_data)
-        return {"token": token}, 200
+        return {"token": token, "message": "token created"}, 200
 
 api.add_resource(CreateTokenResources, "")

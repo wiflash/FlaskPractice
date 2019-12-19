@@ -35,7 +35,7 @@ class BookResources(Resource):
             return rows, 200
         else:
             qry = Books.query.get(id)
-            if qry.deleted_status is True or qry is None:
+            if qry is None or qry.deleted_status is True:
                 return {"message": "NOT_FOUND"}, 404, {"Content-Type": "application/json"}
             return marshal(qry, Books.response_fields), 200, {"Content-Type": "application/json"}
 
@@ -58,11 +58,11 @@ class BookResources(Resource):
         parser = reqparse.RequestParser()
         parser.add_argument("title", location="json", required=True)
         parser.add_argument("isbn", location="json", required=True)
-        parser.add_argument("writer", type=bool, location="json", required=True)
+        parser.add_argument("writer", location="json", required=True)
         args = parser.parse_args()
         if id is not None:
             qry = Books.query.get(id)
-            if qry.deleted_status is False and qry is not None:
+            if qry is not None and qry.deleted_status is False:
                 qry.title = args["title"]
                 qry.isbn = args["isbn"]
                 qry.writer = args["writer"]
@@ -76,7 +76,7 @@ class BookResources(Resource):
     def delete(self, id=None):
         if id is not None:
             qry = Books.query.get(id)
-            if qry.deleted_status is False and qry is not None:
+            if qry is not None and qry.deleted_status is False:
                 qry.deleted_status = True
                 db.session.commit()
                 return {"message": "Deleted"}, 200, {"Content-Type": "application/json"}

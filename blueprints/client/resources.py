@@ -34,7 +34,7 @@ class ClientResources(Resource):
             return rows, 200
         else:
             qry = Clients.query.get(id)
-            if qry.deleted_status is True or qry is None:
+            if qry is None or qry.deleted_status is True:
                 return {"message": "NOT_FOUND"}, 404, {"Content-Type": "application/json"}
             return marshal(qry, Clients.response_fields), 200, {"Content-Type": "application/json"}
 
@@ -56,11 +56,10 @@ class ClientResources(Resource):
         if validation == []:
             password_digest = hashlib.md5(args["client_secret"].encode()).hexdigest()
             client = Clients(args["client_key"], password_digest, args["status"])
-            try:
-                db.session.add(client)
-                db.session.commit()
-            except:
+            if Clients.query.filter_by(client_key=args["client_key"]).all() != []:
                 return {"status": "FAILED", "message": "client_key already exist"}, 400, {"Content-Type": "application/json"}
+            db.session.add(client)
+            db.session.commit()
             return marshal(client, Clients.response_fields), 200, {"Content-Type": "application/json"}
         return {"status": "FAILED", "message": "password is not accepted"}, 400, {"Content-Type": "application/json"}
 
@@ -80,18 +79,18 @@ class ClientResources(Resource):
         args = parser.parse_args()
         if id is not None:
             qry = Clients.query.get(id)
-            if qry.deleted_status is False and qry is not None:
+            if qry is not None and qry.deleted_status is False:
                 validation = policy.test(args["client_secret"])
                 if validation == []:
                     password_digest = hashlib.md5(args["client_secret"].encode()).hexdigest()
-                    try:
-                        qry.client_key = args["client_key"]
-                        qry.client_secret = password_digest
-                        qry.status = args["status"]
-                        qry.updated_at = datetime.now()
-                        db.session.commit()
-                    except:
-                        return {"status": "FAILED", "message": "client_key already exist"}, 400, {"Content-Type": "application/json"}
+                    if Clients.query.get(id).client_key != args["client_key"]:
+                        if Clients.query.filter_by(client_key=args["client_key"]).all() != []:
+                            return {"status": "FAILED", "message": "client_key already exist"}, 400, {"Content-Type": "application/json"}
+                    qry.client_key = args["client_key"]
+                    qry.client_secret = password_digest
+                    qry.status = args["status"]
+                    qry.updated_at = datetime.now()
+                    db.session.commit()
                     return marshal(qry, Clients.response_fields), 200, {"Content-Type": "application/json"}
                 return {"status": "FAILED", "message": "password is not accepted"}, 400, {"Content-Type": "application/json"}
         return {"message": "NOT_FOUND"}, 404, {"Content-Type": "application/json"}
@@ -101,7 +100,7 @@ class ClientResources(Resource):
     def delete(self, id=None):
         if id is not None:
             qry = Clients.query.get(id)
-            if qry.deleted_status is False and qry is not None:
+            if qry is not None and qry.deleted_status is False:
                 qry.deleted_status = True
                 db.session.commit()
                 return {"message": "Deleted"}, 200, {"Content-Type": "application/json"}
