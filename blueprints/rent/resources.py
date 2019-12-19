@@ -33,12 +33,14 @@ class RentResources(Resource):
                 qry = qry.filter_by(book_id=args["book_id"])
             if args["user_id"] is not None:
                 qry = qry.filter_by(user_id=args["user_id"])
+            users_with_selected_client = Users.query.filter_by(client_id=client_claims_data["id"])
+            qry = qry.filter(Rents.user_id.in_([entry.id for entry in users_with_selected_client.all()]))
             qry = qry.limit(args["rp"]).offset(offset)
             for row in qry.all():
                 marshal_rent = marshal(row, Rents.response_fields)
                 book_with_id = Books.query.get(marshal_rent["book_id"])
                 user_with_id = Users.query.get(marshal_rent["user_id"])
-                if book_with_id.deleted_status is False and user_with_id.deleted_status is False and user_with_id.client_id == client_claims_data["id"]:
+                if book_with_id.deleted_status is False and user_with_id.deleted_status is False:
                     marshal_book = marshal(book_with_id, Books.response_fields)
                     marshal_user = marshal(user_with_id, Users.response_fields)
                     marshal_rent["user"] = marshal_user
@@ -52,9 +54,9 @@ class RentResources(Resource):
                 book_with_id = Books.query.get(marshal_rent["book_id"])
                 user_with_id = Users.query.get(marshal_rent["user_id"])
                 if book_with_id is None or book_with_id.deleted_status is True:
-                    return {"message": "book_id not found"}, 404, {"Content-Type": "application/json"}
+                    return {"message": "NOT_FOUND"}, 404, {"Content-Type": "application/json"}
                 if user_with_id is None or user_with_id.deleted_status is True:
-                    return {"message": "user_id not found"}, 404, {"Content-Type": "application/json"}
+                    return {"message": "NOT_FOUND"}, 404, {"Content-Type": "application/json"}
                 if user_with_id.client_id == client_claims_data["id"]:
                     marshal_book = marshal(book_with_id, Books.response_fields)
                     marshal_user = marshal(user_with_id, Users.response_fields)

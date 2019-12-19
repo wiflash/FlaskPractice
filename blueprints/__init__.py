@@ -77,11 +77,13 @@ from blueprints.client.resources import blueprint_client
 from blueprints.user.resources import blueprint_user
 from blueprints.book.resources import blueprint_book
 from blueprints.rent.resources import blueprint_rent
+from blueprints.weather import blueprint_weather
 
 app.register_blueprint(blueprint_auth, url_prefix="/token")
 app.register_blueprint(blueprint_client, url_prefix="/client")
 app.register_blueprint(blueprint_user, url_prefix="/user")
 app.register_blueprint(blueprint_book, url_prefix="/book")
 app.register_blueprint(blueprint_rent, url_prefix="/rent")
+app.register_blueprint(blueprint_weather, url_prefix="/weather")
 
 db.create_all()
