@@ -12,7 +12,7 @@ class WeatherResources(Resource):
     wio_host = "https://api.weatherbit.io/v2.0"
     wio_key = "1389da161d44471ba20afb597430e41a"
 
-    # @jwt_required
+    @jwt_required
     def get(self):
         parser = reqparse.RequestParser()
         parser.add_argument("ip", location="args")
