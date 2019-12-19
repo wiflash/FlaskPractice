@@ -3,6 +3,7 @@ from blueprints import app, db
 from blueprints.client.model import *
 from blueprints.book.model import *
 from blueprints.user.model import *
+from blueprints.rent.model import *
 from flask import Flask, request
 from app import cache
 
@@ -22,6 +23,10 @@ def reset_db():
     
     user = Users("user1", 21, "Male", 1)
     db.session.add(user)
+    db.session.commit()
+
+    rent = Rents(1, 1)
+    db.session.add(rent)
     db.session.commit()
 
 @pytest.fixture

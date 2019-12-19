@@ -33,8 +33,8 @@ class RentResources(Resource):
                 qry = qry.filter_by(book_id=args["book_id"])
             if args["user_id"] is not None:
                 qry = qry.filter_by(user_id=args["user_id"])
-            users_with_selected_client = Users.query.filter_by(client_id=client_claims_data["id"])
-            qry = qry.filter(Rents.user_id.in_([entry.id for entry in users_with_selected_client.all()]))
+            # users_with_selected_client = Users.query.filter_by(client_id=client_claims_data["id"])
+            # qry = qry.filter(Rents.user_id.in_([entry.id for entry in users_with_selected_client.all()]))
             qry = qry.limit(args["rp"]).offset(offset)
             for row in qry.all():
                 marshal_rent = marshal(row, Rents.response_fields)

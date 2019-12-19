@@ -115,6 +115,13 @@ class TestClientCrud():
     # GET METHOD
     def test_internal_client_get_all(self, client):
         token = create_token()
+        data = {}
+        res = client.get("/client", query_string=data, headers={"Authorization": "Bearer "+token})
+        res_json = json.loads(res.data)
+        logging.warning("RESULT: %s", res_json)
+        assert res.status_code == 200
+    def test_internal_client_get_all_filtered(self, client):
+        token = create_token()
         data = {"p": 1, "rp": 10, "status": True}
         res = client.get("/client", query_string=data, headers={"Authorization": "Bearer "+token})
         res_json = json.loads(res.data)

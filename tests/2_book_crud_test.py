@@ -72,6 +72,13 @@ class TestBookCrud():
     # GET METHOD
     def test_internal_book_get_all(self, client):
         token = create_token()
+        data = {}
+        res = client.get("/book", query_string=data, headers={"Authorization": "Bearer "+token})
+        res_json = json.loads(res.data)
+        logging.warning("RESULT: %s", res_json)
+        assert res.status_code == 200
+    def test_internal_book_get_all_filtered(self, client):
+        token = create_token()
         data = {"p": 1, "rp": 10, "title": "judul", "isbn": "1234-5678"}
         res = client.get("/book", query_string=data, headers={"Authorization": "Bearer "+token})
         res_json = json.loads(res.data)
